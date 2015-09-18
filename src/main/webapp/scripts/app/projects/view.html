@@ -1,0 +1,19 @@
+<div class="container center" ng-controller="ViewProjectsController" >
+
+	<div class="left wow fadeInDown">
+         <h2 class="project-title">{{project.name}}</h2>
+     </div>
+
+     <div class="row" ng-switch="canEdit">
+
+        <div class="left wow fadeInDown" ng-switch-when="true" style="width: 900px; margin: 0 auto; text-align: left" ckeditor="options" contenteditable="true" ng-model="$parent.html" ready="onReady()" ng-blur="onBlur()">
+            <!--Texto base-->
+        </div>
+
+        <div class="left wow fadeInDown" ng-switch-when="false" style="width: 900px; margin: 0 auto; text-align: left" ng-bind-html="html">
+            
+        </div>
+
+     </div><!--/.row-->
+
+</div>

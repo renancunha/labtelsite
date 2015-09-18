@@ -1,0 +1,30 @@
+<div>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-4">
+            <h1 class="title">Atenticação</h1>
+
+            <div class="alert alert-danger" ng-show="authenticationError">
+                <strong>Autenticação falhou!</strong> Cheque suas credenciais.
+            </div>
+            <form class="form" role="form" ng-submit="login($event)">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" class="form-control" id="username" placeholder="Usuário" ng-model="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" placeholder="Senha"
+                           ng-model="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Autenticar</button>
+            </form>
+            <p></p><!--
+            <div class="alert alert-warning">
+                <a href="#/reset/request">Did you forget your password?</a>
+            </div>
+            <div class="alert alert-warning">
+                You don't have an account yet? <a href="#/register">Register a new account</a>
+            </div>-->
+        </div>
+    </div>
+</div>

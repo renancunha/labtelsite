@@ -1,0 +1,25 @@
+<div class="container">
+     
+     <div class="center wow fadeInDown">
+         <h2>Projetos</h2>
+         <p class="lead">Veja abaixo os projetos desenvolvidos no <b>LabTel</b></p>
+     </div>
+
+     <div class="row">
+        <div ng-repeat="project in projects" class="col-md wow fadeInDown">
+            <div class="single-profile-top wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown;">
+                <div class="media">
+                    <!--<div class="pull-left">
+                        <a href="#"><img class="media-object" src="/assets/images/man1.jpg" alt=""></a>
+                    </div>-->
+                    <div class="media-body">
+                        <a href="#/projects/{{project.id}}"><h4>{{project.name}}</h4></a>
+                        <p>{{project.description}}</p>
+                    </div>
+                </div><!--/.media -->
+            </div>
+            <br>
+        </div>
+    </div>
+
+ </div><!--/.container-->

@@ -1,0 +1,18 @@
+<div class="container">
+     <div class="center wow fadeInDown">
+         <h2>Colaboradores</h2>
+         <p class="lead">Veja abaixo os colaboradores do laboratório <b>LabTel</b></p>
+     </div>
+
+     <div class="row">
+        <div ng-repeat="user in users" class="col-md-4 wow fadeInDown">
+            <div class="clients-comments text-center">
+                <img src="http://localhost/moodle/user/pix.php/{{user.moodleId}}/f1.jpg" class="img-circle" alt="">
+                <!--<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h3>-->
+                <h4><span>{{user.firstName + ' ' + user.lastName}}</span></h4>
+                <a href="{{user.lattes}}">Lattes</a>
+            </div>
+        </div>
+    </div>
+
+ </div><!--/.container-->
